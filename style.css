@@ -1,0 +1,139 @@
+
+
+body {
+    background: #907c7c;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+header {
+    background: #7507ef;
+    height: 65px;
+    color: #f5f5f2;
+    font-size: 40px;
+} 
+
+.wrapper {
+    display: flex;
+    background: #171616;
+    color: white;
+    width: 550px;
+    height: 250px;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.captcha-area {
+    display: flex;
+    justify-content: center;
+    width: 278px;
+    height: 60px;
+    position: relative;
+    left: 140px;
+    top: 20px;
+}
+
+.captcha-img {
+    display: flex;
+    width: 191px;
+    height: 50px;
+}
+.captcha {
+    font-size: 30px;
+    color: #171616;
+    font-family: fangsong;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+form {
+    display: flex;
+    position: relative;
+    top: 35px;
+    left: 120px;
+    width: 315px;
+}
+
+.input-box {
+    height: 35px;
+    width: 200px;
+    margin-right: 10px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 15px;
+    background: azure;
+    outline: none;
+    font-size: 25px;
+}
+
+#btn {
+    height: 35px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.status-txt {
+    position: relative;
+    top: 45px;
+    left: -30px;
+}
+
+@media screen and (max-width:320px){
+
+    body {
+        background: black;
+    }
+    
+    .wrapper {
+        width: 80%;
+        height: 300px;
+        margin-top: 2px;
+    }
+    header {
+        font-size: 15px;
+        height: 30px;
+    }
+
+    .captcha-area {
+        width: 100%;
+        left: 0px;
+        top: 10px;
+        height: auto;
+    }
+
+    .captcha-img{
+        width: 60%;
+        height: 40px;
+    }
+    span.captcha {
+        font-size: 20px;
+        left: 50px;
+    }
+    form {
+        width: 90%;
+        left: 31px;
+        top:20px;
+    }
+    
+    input.input-box {
+        width: 50%;
+        font-size: 12px;
+        padding-left: 6px;
+    }
+    button#btn {
+        width: 70px;
+    }
+    .status-txt {
+        left: 0px;
+    }
+
+
+}
